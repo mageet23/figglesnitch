@@ -7,7 +7,7 @@ $('button.camera-control').click(function () {
 			encodingType: 0
 		};
 	
-		navigator.camera.getPictures(getPhoto, null, options);
+		navigator.camera.getPicture(getPhoto, null, options);
 		navigator.geolocation.getCurrentPosition(getPosition, null, {enableHighAccuracy: true});
 	
 	}
