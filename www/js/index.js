@@ -10,13 +10,12 @@ $('button.camera-control').click(function () {
 		navigator.camera.getPictures(getPhoto, null, options);
 		navigator.geolocation.getCurrentPosition(getPosition, null, {enableHighAccuracy: true});
 	
-	};
+	}
 
 });
 
 function getPhoto (data) {
 	$('#camera-photo').attr('src', "data:image/jpeg;base64," + data);
-
 
 }
 
